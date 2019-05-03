@@ -11,7 +11,7 @@ def index_load():
 
 @app.route("/main")
 def main_redirect():
-    return redirect("/", code = 302)
+    return redirect("/", code = 302) 
 
 @app.route("/join")
 def join():
