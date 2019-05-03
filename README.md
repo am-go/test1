@@ -2,15 +2,7 @@
 오류가 생기면 여기에 적어주세요! - 채민 -
 
 
-
-/static
-<br>     /css
-<br>     /js
-<br>     /images
-<br>/templates
-<br>     /index.html html ##jinja
-<br>           loginpage.html
-<br>           board.html
-<br>           join.html
-
-    
+TO DO List: 
+1. html templates
+2. 공부할거리들 : jinja2 template engine, flask, react ,,,, else
+3. ideas? 
