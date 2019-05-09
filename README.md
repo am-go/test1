@@ -7,4 +7,4 @@ TO DO List:
 2. 공부할거리들 : jinja2 template engine, flask, react ,,,, else
 3. ideas? 
 
-git허브 공부 꼭하기!
+git허브 공부 꼭하기! 싫어!!
