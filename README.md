@@ -13,3 +13,9 @@
 
 
 git허브 공부 꼭하기! 싫어!!
+
+log:
+
+05/11 4:53
+db connection과 response object 연습을 위해 templates 디렉토리에 임의의 signup.html을 만들었습니다.
+자유롭게 수정해도 됩니다.
