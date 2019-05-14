@@ -4,6 +4,8 @@ app = Flask(__name__)
 app.debug = True
 
 import HelloAMGO.view
+from HelloAMGO.app.dbModule import *
+
 
 @app.before_request
 def before_request():
