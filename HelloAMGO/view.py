@@ -15,11 +15,15 @@ def main_redirect():
 
 @app.route("/join")
 def join():
-    return render_template("index.html")
+    return render_template("join.html")
+
+@app.route("/board1")
+def board1():
+    return render_template("board1.html")
 
 @app.route("/login")
 def login():
-    return render_template("signup.html")
+    return render_template("login.html")
 
 @app.route('/signUp', methods=['POST'])
 def signUp():

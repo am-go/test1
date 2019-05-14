@@ -3,19 +3,33 @@
 
 <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<title>Heroic Features - Start Bootstrap Template</title>
+    <title>Heroic Features - Start Bootstrap Template</title>
 
-<!-- Bootstrap core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>AMGO</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--JQuery first, then Popper.js, then Bootstrap.JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
-<!-- Custom styles for this template -->
-<link href="css/heroic-features.css" rel="stylesheet">
-<style>
+
+    <style>
 	.form-control {
 	  position: relative;
 	  font-size: 16px;
@@ -41,7 +55,8 @@
         margin-left: 300px;
     }
 
-</style>
+
+    </style>
 </head>
 
 <body>
@@ -49,66 +64,69 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-    <a class="navbar-brand" href="indexsample.html">AMGO</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav ml-auto">
-    <li class="nav-item active">
-    <a class="nav-link" href="login.html">로그인
-    <span class="sr-only">(current)</span>
-    </a>
-    </li>
-    <li class="nav-item active">
-    <a class="nav-link" href="join.html">회원가입</a>
-    </li>
-    <li class="nav-item dropdown show">
-    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    게시판</a>
-    <div class="dropdown-menu show" aria-labelledby="dropdown01">
-    <a class="dropdown-item" href="board1.html">
-    자유게시판
-    </a>
-    <a class="dropdown-item" href="#">
-    장터
-    </a>
-    <a class="dropdown-item" href="#">
-    비밀게시판
-    </a>
-    <a class="dropdown-item" href="#">
-    인강공유
-    </a>
-    <a class="dropdown-item" href="#">
-    족보
-    </a>
+        <a class="navbar-brand" href="indexsample.html">AMGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">로그인
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="join.html">회원가입</a>
+                </li>
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        게시판</a>
+                    <div class="dropdown-menu show" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="board1.html">
+                            자유게시판
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            장터
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            비밀게시판
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            인강공유
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            족보
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">급식</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">시간표</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">급식</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">시간표</a>
-    </li>
-    </ul>
-    </div>
-    </div>
-    </nav>
+</nav>
 
 <article class="container">
     <div class="jumbotron my-3">
         <form class="card" style="width:400px; height:450px;">
             <div class="card-header">
                 <h1 class="card-title">로그인</h1>
-            </div>    
-                <div class="card-body">
-                <input type="text" class="form-control" name="username" placeholder="이메일을 입력하세요" required="" autofocus="" />
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" name="username" placeholder="이메일을 입력하세요" required=""
+                       autofocus=""/>
                 <input type="password" class="form-control" name="password" placeholder="비밀번호를 입력하세요" required=""/>
-            <label class="checkbox">
-                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-              </label>
-              
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                </label>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
             </div>
         </form>
     </div>
@@ -116,15 +134,11 @@
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
-<div class="container">
-<p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-</div>
-<!-- /.container -->
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
 </footer>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
