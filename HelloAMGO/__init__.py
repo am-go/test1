@@ -1,15 +1,10 @@
 from flask import Flask
-
 app = Flask(__name__)
 app.debug = True
 
-import HelloAMGO.view
+from HelloAMGO.view import *
+from HelloAMGO.session import *
 from HelloAMGO.app.dbModule import *
-
-
-@app.before_request
-def before_request():
-    print("before request@@@")
 
 
 

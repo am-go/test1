@@ -1,5 +1,7 @@
-from flask import Flask, make_response,request, json,  render_template, redirect, g, Response, Request
-from HelloAMGO import app
+from flask import Flask, make_response,request, json,  render_template, redirect, g, Response, Request, session, flash
+from HelloAMGO import *
+
+
 
 @app.route("/view")
 def view():
@@ -21,9 +23,12 @@ def join():
 def board1():
     return render_template("board1.html")
 
-@app.route("/login")
-def login():
-    return render_template("login.html")
+
+@app.route('/signup')
+def signup():
+    return render_template("signup.html")
+
+
 
 @app.route('/signUp', methods=['POST'])
 def signUp():
@@ -41,3 +46,5 @@ def signUp():
         result = "BAD"
         res = make_response(render_template('signup.html', resul=result))
         return res
+
+

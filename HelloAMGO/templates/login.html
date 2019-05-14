@@ -4,31 +4,28 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
 
     <title>Heroic Features - Start Bootstrap Template</title>
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <title>AMGO</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
-    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.3/examples/starter-template/" rel="canonical">
+    <link crossorigin="anonymous" href="/docs/4.3/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <!--JQuery first, then Popper.js, then Bootstrap.JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script crossorigin="anonymous"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-
-
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
 	.form-control {
 	  position: relative;
@@ -56,6 +53,9 @@
     }
 
 
+
+
+
     </style>
 </head>
 
@@ -65,8 +65,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="indexsample.html">AMGO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarResponsive" data-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -80,10 +80,10 @@
                     <a class="nav-link" href="join.html">회원가입</a>
                 </li>
                 <li class="nav-item dropdown show">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                       href="#" id="dropdown01">
                         게시판</a>
-                    <div class="dropdown-menu show" aria-labelledby="dropdown01">
+                    <div aria-labelledby="dropdown01" class="dropdown-menu show">
                         <a class="dropdown-item" href="board1.html">
                             자유게시판
                         </a>
@@ -114,16 +114,16 @@
 
 <article class="container">
     <div class="jumbotron my-3">
-        <form class="card" style="width:400px; height:450px;">
+        <form class="card" style="width:400px; height:450px;" method="post" action="/login/access">
             <div class="card-header">
                 <h1 class="card-title">로그인</h1>
             </div>
             <div class="card-body">
-                <input type="text" class="form-control" name="username" placeholder="이메일을 입력하세요" required=""
-                       autofocus=""/>
-                <input type="password" class="form-control" name="password" placeholder="비밀번호를 입력하세요" required=""/>
+                <input autofocus="" class="form-control" name="inputID" placeholder="이메일을 입력하세요" required=""
+                       type="text"/>
+                <input class="form-control" name="inputPassword" placeholder="비밀번호를 입력하세요" required="" type="password"/>
                 <label class="checkbox">
-                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                    <input id="rememberMe" name="rememberMe" type="checkbox" value="remember-me"> Remember me
                 </label>
 
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
