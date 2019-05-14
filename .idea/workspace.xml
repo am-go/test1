@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="103ba3eb-7d9a-4a96-be46-6590dbfe2e0d" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change afterPath="$PROJECT_DIR$/HelloAMGO/dbModule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloAMGO/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloAMGO/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/HelloAMGO/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloAMGO/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/HelloAMGO/view.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,6 +25,7 @@
             <state relative-caret-position="230">
               <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
+
             </state>
           </provider>
         </entry>
@@ -29,12 +36,14 @@
             <state relative-caret-position="253">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
+
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -49,7 +58,19 @@
             <state relative-caret-position="92">
               <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
-                <element signature="e#0#87#0" expanded="true" />
+                <element signature="e#0#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelloAMGO/templates/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="50" selection-start-line="15" selection-start-column="23" selection-end-line="50" />
+              <folding>
+                <element signature="e#1666#1672#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,7 +78,16 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <favorite-branches>
       <branch-storage>
@@ -76,18 +106,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HelloAMGO/__init__.py" />
         <option value="$PROJECT_DIR$/run.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/TeamProject.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/../test1-master/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/HelloAMGO/dbModule.py" />
+        <option value="$PROJECT_DIR$/HelloAMGO/view.py" />
+        <option value="$PROJECT_DIR$/HelloAMGO/templates/signup.html" />
+        <option value="$PROJECT_DIR$/HelloAMGO/api.py" />
+        <option value="$PROJECT_DIR$/HelloAMGO/__init__.py" />
       </list>
     </option>
   </component>
@@ -96,7 +122,9 @@
     <option name="y" value="-10" />
     <option name="width" value="1050" />
     <option name="height" value="980" />
+
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -113,6 +141,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,6 +154,12 @@
               <item name="test1" type="462c0819:PsiDirectoryNode" />
               <item name="HelloAMGO" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TeamProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamProject" type="462c0819:PsiDirectoryNode" />
+              <item name="HelloAMGO" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -133,9 +168,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test1-master" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chaemin Lim\Desktop\TeamProject\HelloAMGO\static" />
+      <recent name="C:\Users\Chaemin Lim\Desktop\test1-master" />
+      <recent name="C:\Users\Chaemin Lim\Desktop\TeamProject" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -153,9 +196,6 @@
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -230,7 +270,56 @@
       <option name="project" value="LOCAL" />
       <updated>1557399213097</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="git practice chaemin">
+      <created>1557417124685</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557417124685</updated>
+    </task>
+    <task id="LOCAL-00008" summary="git practice chaemin">
+      <created>1557417688740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557417688740</updated>
+    </task>
+    <task id="LOCAL-00009" summary="git practice chaemin">
+      <created>1557418908486</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557418908486</updated>
+    </task>
+    <task id="LOCAL-00010" summary="git practice chaemin">
+      <created>1557418934628</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1557418934628</updated>
+    </task>
+    <task id="LOCAL-00011" summary="git practice chaemin">
+      <created>1557418992901</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1557418992901</updated>
+    </task>
+    <task id="LOCAL-00012" summary="git practice chaemin">
+      <created>1557554173360</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1557554173361</updated>
+    </task>
+    <task id="LOCAL-00013" summary="static file들의 위치를 옮겼습니다!">
+      <created>1557554352496</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1557554352496</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -274,7 +363,8 @@
     <MESSAGE value="git practice3" />
     <MESSAGE value="git practice4" />
     <MESSAGE value="git practice chaemin" />
-    <option name="LAST_COMMIT_MESSAGE" value="git practice chaemin" />
+    <MESSAGE value="static file들의 위치를 옮겼습니다!" />
+    <option name="LAST_COMMIT_MESSAGE" value="static file들의 위치를 옮겼습니다!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -320,7 +410,24 @@
         <state relative-caret-position="92">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
-            <element signature="e#0#87#0" expanded="true" />
+            <element signature="e#1666#1672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloAMGO/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -341,7 +448,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$PROJECT_DIR$/HelloAMGO/view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />

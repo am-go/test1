@@ -3,6 +3,7 @@ from flask import Flask, make_response, render_template, redirect, g, Response, 
 app = Flask(__name__)
 app.debug = True
 import HelloAMGO.view
+import HelloAMGO.dbModule
 
 @app.before_request
 def before_request():

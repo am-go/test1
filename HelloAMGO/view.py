@@ -1,4 +1,4 @@
-from flask import Flask, make_response, render_template, redirect, g, Response, Request
+from flask import Flask, make_response,request, json,  render_template, redirect, g, Response, Request
 from HelloAMGO import app
 
 @app.route("/view")
@@ -19,4 +19,21 @@ def join():
 
 @app.route("/login")
 def login():
-    return render_template("index.html")
+    return render_template("signup.html")
+
+@app.route('/signUp', methods=['POST'])
+def signUp():
+
+    _name = request.form['inputName']
+    _email = request.form['inputEmail']
+    _password = request.form['inputPassword']
+
+    #validating
+    if _name and _email and _password:
+        result = "ALL GOOD"
+        res = make_response(render_template('signup.html', resul = result))
+        return res
+    else:
+        result = "BAD"
+        res = make_response(render_template('signup.html', resul=result))
+        return res
