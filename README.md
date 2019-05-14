@@ -19,3 +19,5 @@ log:
 05/11 4:53
 db connection과 response object 연습을 위해 templates 디렉토리에 임의의 signup.html을 만들었습니다.
 자유롭게 수정해도 됩니다.
+05/15 02:09
+로그인 세션 부분 진행중입니다.
