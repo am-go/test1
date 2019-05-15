@@ -85,18 +85,22 @@
     <div class="jumbotron my-3">
         <h1 class="display-4">회원가입</h1>
         <br>
-        <form role="form">
+        <form role="form" method="post" action="/join/confirm">
             <div class="form-group">
                 <label for="inputName">성명</label>
-                <input type="text" class="form-control" id="inputName" placeholder="이름을 입력해 주세요">
+                <input type="text" class="form-control" id="inputName" name="inputName" placeholder="이름을 입력해 주세요">
+            </div>
+            <div class="form-group">
+                <label for="inputName">ID</label>
+                <input type="text" class="form-control" id="inputID" name="inputID" placeholder="ID를 입력해 주세요">
             </div>
             <div class="form-group">
                 <label for="InputEmail">이메일 주소</label>
-                <input type="email" class="form-control" id="InputEmail" placeholder="이메일 주소를 입력해주세요">
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="이메일 주소를 입력해주세요">
             </div>
             <div class="form-group">
                 <label for="inputPassword">비밀번호</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="비밀번호를 입력해주세요">
+                <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="비밀번호를 입력해주세요">
             </div>
             <div class="form-group">
                 <label for="inputPasswordCheck">비밀번호 확인</label>
@@ -105,11 +109,11 @@
             </div>
             <div class="form-group">
                 <label for="inputMobile">휴대폰 번호</label>
-                <input type="tel" class="form-control" id="inputMobile" placeholder="휴대폰번호를 입력해 주세요">
+                <input type="tel" class="form-control" id="inputMobile" name="inputMobile" placeholder="휴대폰번호를 입력해 주세요">
             </div>
             <div class="form-group">
                 <label for="inputSchool">고등학교</label>
-                <input type="text" class="form-control" id="inputSchool" placeholder="고등학교를 입력해 주세요">
+                <input type="text" class="form-control" id="inputSchool" name="inputSchool" placeholder="고등학교를 입력해 주세요">
             </div>
 
             <div class="form-group">

@@ -1,9 +1,10 @@
 from flask import Flask
-app = Flask(__name__)
-app.debug = True
+application = Flask(__name__)
+application.debug = True
 
 from HelloAMGO.view import *
 from HelloAMGO.session import *
+from HelloAMGO.joining import *
 from HelloAMGO.app.dbModule import *
 
 

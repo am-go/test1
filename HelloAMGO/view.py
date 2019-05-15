@@ -1,36 +1,33 @@
 from flask import Flask, make_response,request, json,  render_template, redirect, g, Response, Request, session, flash
-from HelloAMGO import *
+from HelloAMGO import application
 
 
 
-@app.route("/view")
+@application.route("/view")
 def view():
     return "helloworld"
 
-@app.route("/")
+@application.route("/")
 def index_load():
     return render_template("index.html")
 
-@app.route("/main")
+@application.route("/main")
 def main_redirect():
     return redirect("/", code = 302) 
 
-@app.route("/join")
-def join():
-    return render_template("join.html")
 
-@app.route("/board1")
+@application.route("/board1")
 def board1():
     return render_template("board1.html")
 
 
-@app.route('/signup')
+@application.route('/signup')
 def signup():
     return render_template("signup.html")
 
 
 
-@app.route('/signUp', methods=['POST'])
+@application.route('/signUp', methods=['POST'])
 def signUp():
 
     _name = request.form['inputName']
