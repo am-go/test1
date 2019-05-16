@@ -1,13 +1,14 @@
 import pymysql
 
+
 class Database():
     def __init__(self):
         self.db = pymysql.connect(
             host = 'localhost',
             port = 3306,
             user = 'root',
-            password = 'chaemin47',
-            db = 'db1',
+            password = 'AMGO',
+            db = 'AMGO',
             charset = 'utf8'
         )
         self.cursor = self.db.cursor(pymysql.cursors.DictCursor)
@@ -27,6 +28,4 @@ class Database():
 
     def commit(self):
         self.db.commit()
-
-
 

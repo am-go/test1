@@ -16,12 +16,11 @@ def join_confirm():
     _phoneNum = request.form.get("inputMobile")
     _school = request.form.get("inputSchool")
 
-    print(_password)
     try:
-
         conn = Database()
         bcrypt = Bcrypt(application)
         pw_hash = bcrypt.generate_password_hash(_password)
+
         pw_hash = pw_hash.decode()
         sql = "INSERT INTO users(id, name, email, pw, phoneNum, school) VALUES(\"%s\",\"%s\", \"%s\", \"%s\", \"%s\", \"%s\")" \
                   %(_id, _name, _email, pw_hash, _phoneNum, _school)

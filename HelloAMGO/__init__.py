@@ -6,7 +6,7 @@ from HelloAMGO.view import *
 from HelloAMGO.session import *
 from HelloAMGO.joining import *
 from HelloAMGO.app.dbModule import *
-
+from HelloAMGO.table import *
 
 
 '''
