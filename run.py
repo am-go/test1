@@ -1,5 +1,4 @@
-from HelloAMGO import app
+from HelloAMGO import application
 
-app.run(host='0.0.0.0')
 
-"saeha"
+application.run(host='0.0.0.0')
