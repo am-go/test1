@@ -7,7 +7,7 @@ from HelloAMGO.session import *
 from HelloAMGO.joining import *
 from HelloAMGO.app.dbModule import *
 from HelloAMGO.table import *
-
+from HelloAMGO.test import *
 
 '''
 # response_class

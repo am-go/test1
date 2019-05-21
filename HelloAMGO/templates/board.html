@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>AMGO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    {% macro bootstrapRef() %}
-<!-- Bootstrap CSS -->
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
@@ -25,52 +26,54 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    {% endmacro %}
+
+
+    <style>
+        #comment{
+            width: 70%;
+            margin: 0 auto;
+            margin top : 100px;
+
+        }
+    </style>
+
 </head>
 
-<body>
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="index.html">AMGO</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsResponsive"
-            aria-controls="navbarsResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <div class="container">
+    <a class="navbar-brand" href="/">AMGO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="login.html"> 로그인
-                    <span class="sr-only"> (현재) </span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="join.html"> 회원가입 </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false"> 게시판 </a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="board1.html">자유</a>
-                    <a class="dropdown-item" href="board1.html">비밀</a>
-                    <a class="dropdown-item" href="board1.html">공유</a>
-                    <a class="dropdown-item" href="board1.html">인강</a>
-                    <a class="dropdown-item" href="board1.html">족보</a>
-                    <a class="dropdown-item" href="board1.html">대입</a>
-                    <a class="dropdown-item" href="board1.html">취업</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">랭킹</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">급식</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">시간표</a>
-            </li>
-        </ul>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href="/login">로그인
+    <span class="sr-only">(current)</span>
+    </a>
+    </li>
+    <li class="nav-item active">
+    <a class="nav-link" href="/join">회원가입</a>
+    </li>
+    <li class="nav-item dropdown show">
+    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    게시판</a>
+    <div class="dropdown-menu show" aria-labelledby="dropdown01">
+    <a class="dropdown-item" href="/board">
+    문제풀기
+    </a>
+    <a class="dropdown-item" href="/answerlist">
+    평가하기
+    </a>
     </div>
-</nav>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
 
 <article class="container">
   <div class="jumbotron my-3">
@@ -93,60 +96,18 @@
         </tr>
         </thead>
         <tbody>
+        {% for test_univ in lst %}
+        <form action="/board/confirm" method="post">
         <tr>
+            <td>{{loop.index}}</td>
+            <td><button href="/board-list" id="test_univ" name="test_univ" type="submit" value="{{test_univ}}" >{{test_univ}}</button></td>
             <td>1</td>
-            <td>서울대</td>
             <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td>1</td>
         </tr>
-        <tr>
-            <td>2</td>
-            <td>연세대</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr><td>3</td>
-            <td>고려대</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>한국외대</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>서강대</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>건국대</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td></tr>
-        <tr>
-            <td>7</td>
-            <td>국민대</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>인하대</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-        </tr>
+
+        {% endfor %}
+        </form>
         </tbody>
     </table>
     <hr/>
