@@ -1,27 +1,48 @@
-from flask import Flask, make_response,request, json,  render_template, redirect, g, Response, Request
-from HelloAMGO import app
 
-@app.route("/view")
+from HelloAMGO import application
+from flask import json, make_response, render_template, request, redirect, url_for
+from flask_bcrypt import Bcrypt
+from HelloAMGO.app.dbModule import *
+
+
+@application.route("/view")
 def view():
     return "helloworld"
 
-@app.route("/")
-def index_load():
-    return render_template("index.html")
+@application.route("/")
+def helloworld():
+    return render_template("indexsample.html")
 
-@app.route("/main")
+@application.route("/main")
 def main_redirect():
     return redirect("/", code = 302) 
 
-@app.route("/join")
-def join():
-    return render_template("index.html")
 
-@app.route("/login")
-def login():
+@application.route("/board")
+def board():
+    lst = ["서울대","고려대","연세대","한국외대","서강대"]
+    return render_template("board.html", lst=lst)
+
+@application.route("/board-list")
+def board_list():
+    lst = ["2018","2017","2016","2015","2014"]
+    return render_template("board-list.html", lst=lst)
+
+@application.route("/board-answer")
+def board_answer():
+    return render_template("board-answer.html")
+
+@application.route("/answerlist")
+def answerlist():
+    return render_template("answerlist.html")
+
+@application.route('/signup')
+def signup():
     return render_template("signup.html")
 
-@app.route('/signUp', methods=['POST'])
+
+
+@application.route('/signUp', methods=['POST'])
 def signUp():
 
     _name = request.form['inputName']
@@ -37,3 +58,5 @@ def signUp():
         result = "BAD"
         res = make_response(render_template('signup.html', resul=result))
         return res
+
+

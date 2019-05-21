@@ -1,15 +1,13 @@
-from flask import Flask, make_response, render_template, redirect, g, Response, Request
+from flask import Flask
+application = Flask(__name__)
+application.debug = True
 
-app = Flask(__name__)
-app.debug = True
-import HelloAMGO.view
-import HelloAMGO.dbModule
-
-@app.before_request
-def before_request():
-    print("before request@@@")
-
-
+from HelloAMGO.view import *
+from HelloAMGO.session import *
+from HelloAMGO.joining import *
+from HelloAMGO.app.dbModule import *
+from HelloAMGO.table import *
+from HelloAMGO.test import *
 
 '''
 # response_class
