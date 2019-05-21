@@ -27,14 +27,10 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-        <style> .form-control { position: relative; font-size: 16px; height: auto; padding: 10px; @include box-sizing(border-box); &:focus { z-index: 2; } }
-        .card-body input { position: relative; margin-top: 20px; }
-        .checkbox{ margin-bottom: 80px; margin-left: 230px; }
-        .card{ margin-top: 20px; margin-left: 300px; } </style>
 
 </head>
 
-<body>
+
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -70,36 +66,53 @@
     </div>
     </nav>
 
-
-
 <article class="container">
-    <div class="jumbotron my-3">
-        <form class="card" style="width:400px; height:450px;" method="post" action="/login/access">
-            <div class="card-header">
-                <h1 class="card-title">로그인</h1>
-            </div>
-            <div class="card-body">
-                <input autofocus="" class="form-control" name="inputID" placeholder="이메일을 입력하세요" required=""
-                       type="text"/>
-                <input class="form-control" name="inputPassword" placeholder="비밀번호를 입력하세요" required="" type="password"/>
-                <label class="checkbox">
-                    <input id="rememberMe" name="rememberMe" type="checkbox" value="remember-me"> Remember me
-                </label>
+  <div class="jumbotron my-3">
+    <h1 class="display-4">문제</h1>
+    <br>
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-0" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit"> 검색 </button>
+      </form>
 
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-            </div>
+<div class="row text-center">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>연도</th>
+            <th>문항1</th>
+            <th>문항2</th>
+            <th>문항3</th>
+            <th>문항4</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for year in lst %}
+        <form action="/board-list/confirm" method="post">
+        <tr>
+            <td><input type="radio" name="options_y" id="option1" value="{{year}}"> {{year}}</td>
+            <td><input type="radio" name="options_x" id="option2" value="1-1">1-1</td>
+            <td><input type="radio" name="options_x" id="option3" value="1-2">1-2</td>
+            <td><input type="radio" name="options_x" id="option4" value="2-1">2-1</td>
+          <td><input type="radio" name="options_x" id="option5" value="2-2">2-2</td>
+        </tr>
+        {% endfor %}
+            <input href="" type="submit" value="작성하기">
         </form>
-    </div>
+        </tbody>
+    </table>
+    <hr/>
+</div>
+<hr/>
 </article>
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
+<div class="container">
+<p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+</div>
+<!-- /.container -->
 </footer>
 
 </body>
-
 </html>
