@@ -1,4 +1,3 @@
-
 from HelloAMGO import application
 from flask import json, make_response, render_template, request, redirect, url_for
 from flask_bcrypt import Bcrypt

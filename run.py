@@ -1,10 +1,4 @@
-from HelloAMGO import app
-
-app.run(host='0.0.0.0')
+from HelloAMGO import application
 
 
-"hello!"
-
-"i am in branch issues!"
-"i am branch chaemin"
-"i am branch seongjoo"
+application.run(host='0.0.0.0')

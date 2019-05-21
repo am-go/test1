@@ -31,3 +31,4 @@ def join_confirm():
     except Exception as ex:  # 에러 종류
         print('에러가 발생 했습니다', ex)
         return redirect(url_for('login'))
+
