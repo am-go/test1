@@ -46,6 +46,7 @@ USE AMGO;
 CREATE TABLE test_content(
 idx INT NOT NULL AUTO_INCREMENT,
 testName VARCHAR(200) NOT NULL,
+probNum INT NOT NULL,
 solvedContent MEDIUMTEXT,
 writtenTime DATETIME NOT NULL,
 who VARCHAR(50) NOT NULL,
@@ -65,4 +66,16 @@ INSERT INTO univs (name, testNum, testedNum) VALUES('한양대학교','0','0');
 INSERT INTO univs (name, testNum, testedNum) VALUES('성균관대학교','0','0');
 INSERT INTO univs (name, testNum, testedNum) VALUES('한국외국어대학교','0','0');
 
+INSERT INTO users(id, name, email, pw, phoneNum, school) VALUES('master', 'master', 'master@gmail.com', 'master', 010-1111-1111, '서울고등학교');
 
+INSERT INTO univs_test(name, testName, year, probNum, seenCount, solvedCount) VALUES('서울대학교', '서울대학교 2019년 인문논술', '2019', '1', '0', '0');
+INSERT INTO univs_test(name, testName, year, probNum, seenCount, solvedCount) VALUES('서울대학교', '서울대학교 2019년 수리논술', '2019', '2', '0', '0');
+INSERT INTO univs_test(name, testName, year, probNum, seenCount, solvedCount) VALUES('서울대학교', '고려대학교 2019년 인문논술', '2019', '2', '0', '0');
+INSERT INTO univs_test(name, testName, year, probNum, seenCount, solvedCount) VALUES('서울대학교', '고려대학교 2019년 수리논술', '2019', '2', '0', '0');
+INSERT INTO univs_test(name, testName, year, probNum, seenCount, solvedCount) VALUES('서울대학교', '고려대학교 2019년 인문논술-경상', '2019', '2', '0', '0');
+
+INSERT INTO test_content (testName, probNum, solvedContent, writtenTime, who) VALUES('서울대학교 2019년 인문논술', '1', '해결', '9999-12-31 23:59:59', 'master');
+INSERT INTO test_content (testName, probNum, solvedContent, writtenTime, who) VALUES('서울대학교 2019년 수리논술', '1', '해결', '9999-12-31 23:59:59', 'master');
+INSERT INTO test_content (testName, probNum, solvedContent, writtenTime, who) VALUES('고려대학교 2019년 인문논술', '1', '해결', '9999-12-31 23:59:59', 'master');
+INSERT INTO test_content (testName, probNum, solvedContent, writtenTime, who) VALUES('고려대학교 2019년 수리논술', '1', '해결', '9999-12-31 23:59:59', 'master');
+INSERT INTO test_content (testName, probNum, solvedContent, writtenTime, who) VALUES('고려대학교 2019년 인문논술-경상', '1', '해결', '9999-12-31 23:59:59', 'master');
