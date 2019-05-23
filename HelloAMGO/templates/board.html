@@ -96,11 +96,11 @@
         </tr>
         </thead>
         <tbody>
-        <form method="get" action="/board/board_list/">
+        <form method="POST" action="/board/board_list">
         {% for test_univ in lst %}
         <tr>
             <td>{{loop.index}}</td>
-            <td><button id="test_univ" name="test_univ" type="submit" value="{{test_univ}}" >{{test_univ}}</button></td>
+            <td><button id="test_univ" name="univName" type="submit" value="{{test_univ}}" >{{test_univ}}</button></td>
             <td>1</td>
             <td>1</td>
             <td>1</td>

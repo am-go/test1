@@ -14,10 +14,11 @@ def board():
 
     return render_template("board.html", lst=lst)
 
-@application.route("/board/board-list/<test_univ>")
-def board_list(test_univ):
+@application.route("/board/board_list", methods=['POST'])
+def board_list():
+    univName = request.form.get("univName")
     lst = ["2018","2017","2016","2015","2014"]
-    print(test_univ)
+    print(univName)
     return render_template("board-list.html", lst=lst)
 
 @application.route("/board-answer")
