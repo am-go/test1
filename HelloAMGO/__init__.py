@@ -8,7 +8,7 @@ from HelloAMGO.joining import *
 from HelloAMGO.app.dbModule import *
 from HelloAMGO.table import *
 from HelloAMGO.test import *
-
+from HelloAMGO.board import *
 '''
 # response_class
 custom_res = Response("Custom Response", 200, {'test': 'ttt'})

@@ -9,11 +9,6 @@ test_year =  '2018'
 test_num ='1-1'
 
 
-@application.route("/board/confirm", methods=['POST'])
-def testUniv():
-    global test_univ
-    test_univ = request.form.get('test_univ')
-    return redirect(url_for('board_list'))
 
 @application.route("/board-list/confirm", methods=['POST'])
 def testList():

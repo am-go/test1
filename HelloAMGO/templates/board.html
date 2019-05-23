@@ -96,16 +96,15 @@
         </tr>
         </thead>
         <tbody>
+        <form method="get" action="/board/board_list/">
         {% for test_univ in lst %}
-        <form action="/board/confirm" method="post">
         <tr>
             <td>{{loop.index}}</td>
-            <td><button href="/board-list" id="test_univ" name="test_univ" type="submit" value="{{test_univ}}" >{{test_univ}}</button></td>
+            <td><button id="test_univ" name="test_univ" type="submit" value="{{test_univ}}" >{{test_univ}}</button></td>
             <td>1</td>
             <td>1</td>
             <td>1</td>
         </tr>
-
         {% endfor %}
         </form>
         </tbody>

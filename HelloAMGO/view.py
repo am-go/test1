@@ -4,36 +4,14 @@ from flask_bcrypt import Bcrypt
 from HelloAMGO.app.dbModule import *
 
 
-@application.route("/view")
-def view():
-    return "helloworld"
-
 @application.route("/")
-def helloworld():
+def index_load():
     return render_template("indexsample.html")
 
 @application.route("/main")
 def main_redirect():
-    return redirect("/", code = 302) 
+    return redirect("/", code = 302)
 
-
-@application.route("/board")
-def board():
-    lst = ["서울대","고려대","연세대","한국외대","서강대"]
-    return render_template("board.html", lst=lst)
-
-@application.route("/board-list")
-def board_list():
-    lst = ["2018","2017","2016","2015","2014"]
-    return render_template("board-list.html", lst=lst)
-
-@application.route("/board-answer")
-def board_answer():
-    return render_template("board-answer.html")
-
-@application.route("/answerlist")
-def answerlist():
-    return render_template("answerlist.html")
 
 @application.route('/signup')
 def signup():

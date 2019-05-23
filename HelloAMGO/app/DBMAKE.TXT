@@ -1,0 +1,68 @@
+
+
+CREATE DATABASE AMGO;
+
+========================= 회원 테이블 만드는 쿼리
+
+USE AMGO;
+CREATE TABLE users(
+idx INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+id VARCHAR(50) NOT NULL,
+name VARCHAR(50) NOT NULL,
+email VARCHAR(100) NOT NULL,
+pw VARCHAR(200) NOT NULL,
+phoneNum VARCHAR(50) NOT NULL,
+school VARCHAR(50) NOT NULL
+);
+
+=============================대학 이름 리스트 테이블 쿼리
+
+
+USE AMGO;
+CREATE TABLE univs(
+name VARCHAR(50) NOT NULL PRIMARY KEY,
+testNum INT NOT NULL,
+testedNum INT NOT NULL
+);
+
+========================= 문제 리스트 테이블 쿼리
+USE AMGO;
+CREATE TABLE univs_test(
+idx INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL,
+testName VARCHAR(200) NOT NULL,
+year INT NOT NULL,
+probNum INT NOT NULL,
+seenCount INT NOT NULL,
+solvedCount INT NOT NULL,
+PRIMARY KEY(idx),
+UNIQUE KEY(testName),
+FOREIGN KEY(name)
+REFERENCES univs(name) ON UPDATE CASCADE
+);
+
+=============================
+USE AMGO;
+CREATE TABLE test_content(
+idx INT NOT NULL AUTO_INCREMENT,
+testName VARCHAR(200) NOT NULL,
+solvedContent MEDIUMTEXT,
+writtenTime DATETIME NOT NULL,
+who VARCHAR(50) NOT NULL,
+PRIMARY KEY(idx),
+FOREIGN KEY(testName)
+REFERENCES univs_test(testName) ON UPDATE CASCADE
+);
+
+==========================임시 데이터 삽입
+
+USE AMGO;
+INSERT INTO univs (name, testNum, testedNum) VALUES('서울대학교','0','0');
+INSERT INTO univs (name, testNum, testedNum) VALUES('고려대학교','0','0');
+INSERT INTO univs (name, testNum, testedNum) VALUES('연세대학교','0','0');
+INSERT INTO univs (name, testNum, testedNum) VALUES('서강대학교','0','0');
+INSERT INTO univs (name, testNum, testedNum) VALUES('한양대학교','0','0');
+INSERT INTO univs (name, testNum, testedNum) VALUES('성균관대학교','0','0');
+INSERT INTO univs (name, testNum, testedNum) VALUES('한국외국어대학교','0','0');
+
+
