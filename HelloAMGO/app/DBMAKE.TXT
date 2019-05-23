@@ -82,7 +82,7 @@ INSERT INTO test_content (testName, probNum, solvedContent, writtenTime, who) VA
 /////////////
 
 >>>추가로 수행하세요<<
-DROP TABLE test_contest;
+DROP TABLE test_content;
 CREATE TABLE test_content(
 idx INT NOT NULL AUTO_INCREMENT,
 testName VARCHAR(200) NOT NULL,
